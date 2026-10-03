@@ -1,7 +1,7 @@
 import pytest
 from click.testing import CliRunner
 
-from snip.cli import cli
+from quicksnip.cli import cli
 
 
 @pytest.fixture

@@ -14,7 +14,7 @@ db = Database()
 
 @click.group()
 def cli():
-    """snip - A fast, terminal-based code snippet manager."""
+    """quicksnip - A fast, terminal-based code snippet manager."""
     pass
 
 
@@ -168,7 +168,7 @@ def export(filepath):
 @cli.command()
 @click.argument("filepath", type=click.File("r"))
 def import_(filepath):
-    """Import snippets from a JSON file."""
+    """import quicksnippets from a JSON file."""
     json_data = filepath.read()
     count = db.import_json(json_data)
     console.print(f"[green]✓[/green] Imported {count} snippets!")

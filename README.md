@@ -1,16 +1,16 @@
-# snip
+# quicksnip
 
 > A fast, terminal-based code snippet manager for developers
 
-[![PyPI](https://img.shields.io/pypi/v/snip.svg)](https://pypi.org/project/snip/)
+[![PyPI](https://img.shields.io/pypi/v/quicksnip.svg)](https://pypi.org/project/quicksnip/)
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 ![demo](demo.gif)
 
-## Why snip?
+## Why quicksnip?
 
-Tired of searching through old projects for that one function you wrote? **snip** lets you save, search, and copy code snippets right from your terminal.
+Tired of searching through old projects for that one function you wrote? **quicksnip** lets you save, search, and copy code snippets right from your terminal.
 
 ## Features
 
@@ -24,43 +24,43 @@ Tired of searching through old projects for that one function you wrote? **snip*
 ## Installation
 
 ```bash
-pip install snip
+pip install quicksnip
 ```
 
 ## Usage
 
 ### Add a snippet
 ```bash
-snip add my-function -d "Quick sort implementation" -l python -t "algorithms,sorting" -c "def quicksort(arr): ..."
+quicksnip add my-function -d "Quick sort implementation" -l python -t "algorithms,sorting" -c "def quicksort(arr): ..."
 ```
 
 ### Search snippets
 ```bash
-snip search "sort"
-snip search -l python
-snip search -t algorithms
+quicksnip search "sort"
+quicksnip search -l python
+quicksnip search -t algorithms
 ```
 
 ### Copy to clipboard
 ```bash
-snip copy my-function
+quicksnip copy my-function
 ```
 
 ### List all snippets
 ```bash
-snip list
-snip list -l python
+quicksnip list
+quicksnip list -l python
 ```
 
 ### Show a snippet
 ```bash
-snip show my-function
+quicksnip show my-function
 ```
 
 ### Export/Import
 ```bash
-snip export backup.json
-snip import backup.json
+quicksnip export backup.json
+quicksnip import backup.json
 ```
 
 ## License

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+  <defs>
+    <style>
+      .bg { fill: #1a1b26; }
+      .titlebar { fill: #24283b; }
+      .text { font-family: 'Cascadia Code', 'Fira Code', 'Consolas', monospace; font-size: 13px; fill: #c0caf5; }
+      .prompt { fill: #7aa2f7; }
+      .cmd { fill: #c0caf5; }
+      .flag { fill: #bb9af7; }
+      .success { fill: #9ece6a; }
+      .output { fill: #a9b1d6; }
+      .dim { fill: #565f89; }
+      .cursor { fill: #c0caf5; animation: blink 1s step-end infinite; }
+      @keyframes blink { 50% { opacity: 0; } }
+      .line { opacity: 0; animation: fadeIn 0.3s forwards; }
+      .line1 { animation-delay: 0.2s; }
+      .line2 { animation-delay: 0.8s; }
+      .line3 { animation-delay: 1.4s; }
+      .line4 { animation-delay: 2.0s; }
+      .line5 { animation-delay: 2.6s; }
+      .line6 { animation-delay: 3.2s; }
+      .line7 { animation-delay: 3.8s; }
+      .line8 { animation-delay: 4.4s; }
+      .line9 { animation-delay: 5.0s; }
+      .line10 { animation-delay: 5.6s; }
+      .line11 { animation-delay: 6.2s; }
+      .line12 { animation-delay: 6.8s; }
+      .line13 { animation-delay: 7.4s; }
+      .line14 { animation-delay: 8.0s; }
+      .line15 { animation-delay: 8.6s; }
+      .line16 { animation-delay: 9.2s; }
+      @keyframes fadeIn { to { opacity: 1; } }
+    </style>
+  </defs>
+  <rect class="bg" width="640" height="360" rx="8"/>
+  <rect class="titlebar" width="640" height="28" rx="8"/>
+  <circle cx="20" cy="14" r="5" fill="#ff5f57"/>
+  <circle cx="38" cy="14" r="5" fill="#febc2e"/>
+  <circle cx="56" cy="14" r="5" fill="#28c840"/>
+  <text class="text" x="320" y="18" text-anchor="middle" font-size="11" fill="#565f89">snip — terminal</text>
+  <text class="text line line1" x="20" y="52"><tspan class="prompt">$ </tspan><tspan class="cmd">snip add docker-clean -d "Remove all containers" -l bash -t "docker" -c "docker rm -f \$(docker ps -aq)"</tspan></text>
+  <text class="text line line2" x="20" y="74"><tspan class="success">✓</tspan><tspan class="output"> Snippet 'docker-clean' added successfully!</tspan></text>
+  <text class="text line line3" x="20" y="104"><tspan class="prompt">$ </tspan><tspan class="cmd">snip search docker</tspan></text>
+  <text class="text line line4" x="20" y="126"><tspan class="dim">Search Results (1 found)</tspan></text>
+  <text class="text line line5" x="20" y="144"><tspan class="output">  docker-clean  bash  docker  Remove all containers</tspan></text>
+  <text class="text line line6" x="20" y="174"><tspan class="prompt">$ </tspan><tspan class="cmd">snip copy docker-clean</tspan></text>
+  <text class="text line line7" x="20" y="196"><tspan class="success">✓</tspan><tspan class="output"> Copied 'docker-clean' to clipboard!</tspan></text>
+  <text class="text line line8" x="20" y="226"><tspan class="prompt">$ </tspan><tspan class="cmd">snip stats</tspan></text>
+  <text class="text line line9" x="20" y="248"><tspan class="dim">┌─ Statistics ─┐</tspan></text>
+  <text class="text line line10" x="20" y="266"><tspan class="output">│ Total: 1     │</tspan></text>
+  <text class="text line line11" x="20" y="284"><tspan class="output">│ Languages: 1 │</tspan></text>
+  <text class="text line line12" x="20" y="302"><tspan class="dim">└──────────────┘</tspan></text>
+  <text class="text line line13" x="20" y="332"><tspan class="prompt">$ </tspan><tspan class="cursor">█</tspan></text>
+</svg>

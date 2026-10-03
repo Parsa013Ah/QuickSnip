@@ -10,7 +10,7 @@ from .models import Snippet
 def get_db_path() -> Path:
     if "SNIP_DB_PATH" in os.environ:
         return Path(os.environ["SNIP_DB_PATH"])
-    return Path.home() / ".snip" / "snippets.db"
+    return Path.home() / ".quicksnip" / "snippets.db"
 
 
 class Database:
