@@ -29,38 +29,40 @@ pip install quicksnip
 
 ## Usage
 
+Both `snip` and `quicksnip` commands work:
+
 ### Add a snippet
 ```bash
-quicksnip add my-function -d "Quick sort implementation" -l python -t "algorithms,sorting" -c "def quicksort(arr): ..."
+snip add my-function -d "Quick sort implementation" -l python -t "algorithms,sorting" -c "def quicksort(arr): ..."
 ```
 
 ### Search snippets
 ```bash
-quicksnip search "sort"
-quicksnip search -l python
-quicksnip search -t algorithms
+snip search "sort"
+snip search -l python
+snip search -t algorithms
 ```
 
 ### Copy to clipboard
 ```bash
-quicksnip copy my-function
+snip copy my-function
 ```
 
 ### List all snippets
 ```bash
-quicksnip list
-quicksnip list -l python
+snip list
+snip list -l python
 ```
 
 ### Show a snippet
 ```bash
-quicksnip show my-function
+snip show my-function
 ```
 
 ### Export/Import
 ```bash
-quicksnip export backup.json
-quicksnip import backup.json
+snip export backup.json
+snip import backup.json
 ```
 
 ## License
