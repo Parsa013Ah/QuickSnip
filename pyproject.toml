@@ -17,6 +17,7 @@ dependencies = [
 
 [project.scripts]
 quicksnip = "quicksnip.cli:cli"
+snip = "quicksnip.cli:cli"
 
 [tool.setuptools.packages.find]
 include = ["quicksnip*"]
